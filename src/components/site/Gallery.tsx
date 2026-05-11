@@ -6,8 +6,8 @@ import g3 from "@/assets/gallery-3.jpg";
 import g4 from "@/assets/gallery-4.jpg";
 
 const items = [
-  { src: g1, title: "Vestido Plissé · SS26", tag: "Couture", span: "md:col-span-7 md:row-span-2", h: "h-[640px]" },
-  { src: g2, title: "Estudo · Ember Fold", tag: "Macro", span: "md:col-span-5", h: "h-[300px]" },
+  { src: g1, title: "Vestidos Plissados", tag: "Couture", span: "md:col-span-7 md:row-span-2", h: "h-[640px]" },
+  { src: g2, title: "Dobras Milimétricas", tag: "Macro", span: "md:col-span-5", h: "h-[300px]" },
   { src: g3, title: "Godê em Movimento", tag: "Runway", span: "md:col-span-5", h: "h-[320px]" },
   { src: g4, title: "Strass · Detalhe Joia", tag: "Aplicação", span: "md:col-span-12", h: "h-[420px]" },
 ];

@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "motion/react";
 
 const links = [
-  { label: "Atelier", href: "#about" },
+  { label: "TexWagen", href: "#about" },
   { label: "Serviços", href: "#services" },
   { label: "Galeria", href: "#gallery" },
   { label: "Contato", href: "#contact" },
