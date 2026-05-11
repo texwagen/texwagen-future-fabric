@@ -1,9 +1,9 @@
 import { motion } from "motion/react";
 
 const stats = [
-  { k: "17+", v: "Anos de atelier" },
-  { k: "240", v: "Marcas atendidas" },
-  { k: "6", v: "Técnicas autorais" },
+  { k: "15+", v: "Anos de experiência" },
+  { k: "107", v: "Marcas atendidas" },
+  { k: "6", v: "Técnicas" },
   { k: "∞", v: "Possibilidades de dobra" },
 ];
 
@@ -21,7 +21,7 @@ export function About() {
             className="inline-flex items-center gap-3 text-[11px] uppercase tracking-[0.3em] text-muted-foreground"
           >
             <span className="h-px w-8 bg-spectrum" />
-            Atelier
+            TexWagen
           </motion.span>
 
           <motion.h2

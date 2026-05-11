@@ -7,7 +7,7 @@ const services = [
   { n: "03", title: "Plissado Faca · Tam 3", desc: "Pregas amplas para statement pieces e moda autoral.", tag: "Editorial" },
   { n: "04", title: "Plissado Godê", desc: "Pregas radiais que abrem em movimento — assinatura da casa.", tag: "Movimento" },
   { n: "05", title: "Aplicação DTF", desc: "Transferência de imagens com fidelidade fotográfica em qualquer base.", tag: "Imagem" },
-  { n: "06", title: "Aplicação de Strass", desc: "Pedraria fixada à mão com precisão de joalheria.", tag: "Brilho" },
+  { n: "06", title: "Aplicação de Strass", desc: "Strass aplicado com perfeição milimétrica e acabamento impecável.", tag: "Brilho" },
 ];
 
 function Card({ s, i }: { s: (typeof services)[number]; i: number }) {
@@ -65,10 +65,10 @@ function Card({ s, i }: { s: (typeof services)[number]; i: number }) {
           <p className="mt-4 max-w-[28ch] text-sm leading-relaxed text-muted-foreground">
             {s.desc}
           </p>
-          <div className="mt-7 flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] text-foreground/80 transition group-hover:text-foreground">
+          <a href="#contact" className="mt-7 flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] text-foreground/80 transition group-hover:text-foreground">
             Solicitar amostra
             <span className="transition group-hover:translate-x-1">→</span>
-          </div>
+          </a>
         </div>
       </div>
     </motion.div>
