@@ -1,13 +1,14 @@
 import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
 import type { MouseEvent } from "react";
+import { images } from "@/config/images";
 
 const services = [
-  { n: "01", title: "Plissado Faca · Tam 1", desc: "Dobras milimétricas para silhuetas estruturadas. Acabamento técnico fino.", tag: "Precisão" },
-  { n: "02", title: "Plissado Faca · Tam 2", desc: "Equilíbrio entre rigidez escultural e fluidez do caimento.", tag: "Médio porte" },
-  { n: "03", title: "Plissado Faca · Tam 3", desc: "Pregas amplas para statement pieces e moda autoral.", tag: "Editorial" },
-  { n: "04", title: "Plissado Godê", desc: "Pregas radiais que abrem em movimento — assinatura da casa.", tag: "Movimento" },
-  { n: "05", title: "Aplicação DTF", desc: "Transferência de imagens com fidelidade fotográfica em qualquer base.", tag: "Imagem" },
-  { n: "06", title: "Aplicação de Strass", desc: "Strass aplicado com perfeição milimétrica e acabamento impecável.", tag: "Brilho" },
+  { n: "01", title: "Plissado Faca · Tam 1", desc: "Dobras milimétricas para silhuetas estruturadas. Acabamento técnico fino.", tag: "Precisão", img: images.service1 },
+  { n: "02", title: "Plissado Faca · Tam 2", desc: "Equilíbrio entre rigidez escultural e fluidez do caimento.", tag: "Médio porte", img: images.service2 },
+  { n: "03", title: "Plissado Faca · Tam 3", desc: "Pregas amplas para statement pieces e moda autoral.", tag: "Editorial", img: images.service3 },
+  { n: "04", title: "Plissado Godê", desc: "Pregas radiais que abrem em movimento — assinatura da casa.", tag: "Movimento", img: images.service4 },
+  { n: "05", title: "Aplicação DTF", desc: "Transferência de imagens com fidelidade fotográfica em qualquer base.", tag: "Imagem", img: images.service5 },
+  { n: "06", title: "Aplicação de Strass", desc: "Strass aplicado com perfeição milimétrica e acabamento impecável.", tag: "Brilho", img: images.service6 },
 ];
 
 function Card({ s, i }: { s: (typeof services)[number]; i: number }) {
@@ -37,8 +38,19 @@ function Card({ s, i }: { s: (typeof services)[number]; i: number }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.9, delay: (i % 3) * 0.08, ease: [0.22, 1, 0.36, 1] }}
-      className="group relative h-[380px] overflow-hidden rounded-2xl border border-white/8 glass [transform-style:preserve-3d]"
+      className="group relative h-[440px] overflow-hidden rounded-2xl border border-white/8 glass [transform-style:preserve-3d]"
     >
+      <div className="absolute inset-0 overflow-hidden">
+        <img
+          src={s.img}
+          alt={s.title}
+          loading="lazy"
+          width={1024}
+          height={1024}
+          className="h-full w-full object-cover opacity-50 transition duration-[1200ms] ease-out group-hover:scale-105 group-hover:opacity-70"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/30" />
+      </div>
       <motion.div
         aria-hidden
         style={{
