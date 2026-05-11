@@ -1,9 +1,19 @@
 import { motion } from "motion/react";
 
-const items: [string, string, string?][] = [
-  ["Endereço", "Rua Philipp Bauler, 420 — Salto, Blumenau"],
-  ["E-mail", "texwagen@gmail.com", "mailto:texwagen@gmail.com"],
-  ["WhatsApp", "+55 47 99267-0703", "https://wa.me/5547992670703"],
+const items: { k: string; v: string; href?: string; sub?: string }[] = [
+  {
+    k: "Endereço",
+    v: "Rua Philipp Bauler, 420",
+    sub: "Testo Salto · Blumenau — SC",
+    href: "https://maps.google.com/?q=Rua+Philipp+Bauler+420+Testo+Salto+Blumenau",
+  },
+  { k: "E-mail", v: "texwagen@gmail.com", href: "mailto:texwagen@gmail.com" },
+  {
+    k: "WhatsApp",
+    v: "+55 47 99267-0703",
+    sub: "Seg a Sex · 9h às 18h",
+    href: "https://wa.me/5547992670703",
+  },
 ];
 
 export function Contact() {
@@ -37,37 +47,56 @@ export function Contact() {
           transition={{ duration: 1 }}
           className="relative md:col-span-7"
         >
-          <div className="relative rounded-2xl border border-white/8 glass p-8 md:p-12">
+          <div className="relative overflow-hidden rounded-2xl border border-white/8 glass p-8 md:p-12">
             <div className="border-spectrum pointer-events-none absolute inset-0 rounded-2xl opacity-50" />
+            <div aria-hidden className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-spectrum opacity-20 blur-3xl" />
 
-            <dl className="relative space-y-8">
-              {items.map(([k, v, href]) => (
-                <div
-                  key={k}
-                  className="group flex flex-col gap-2 border-b border-white/8 pb-6 last:border-0 last:pb-0 md:flex-row md:items-center md:justify-between md:gap-8"
-                >
-                  <dt className="text-[10px] uppercase tracking-[0.28em] text-muted-foreground">
-                    {k}
-                  </dt>
-                  <dd className="font-display text-2xl tracking-tight text-foreground md:text-3xl">
+            <ul className="relative grid gap-5">
+              {items.map(({ k, v, href, sub }, i) => {
+                const Inner = (
+                  <div className="relative flex items-start gap-5 rounded-xl border border-white/8 bg-white/[0.02] p-5 transition duration-500 hover:border-white/25 hover:bg-white/[0.04] md:p-6">
+                    <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-white/15 font-mono text-[11px] text-muted-foreground transition group-hover:border-white/40 group-hover:text-foreground">
+                      0{i + 1}
+                    </span>
+                    <div className="min-w-0 flex-1">
+                      <div className="text-[10px] uppercase tracking-[0.28em] text-muted-foreground">
+                        {k}
+                      </div>
+                      <div className="mt-1.5 truncate font-display text-xl tracking-tight text-foreground md:text-2xl">
+                        {v}
+                      </div>
+                      {sub && (
+                        <div className="mt-1 text-[12px] text-muted-foreground">
+                          {sub}
+                        </div>
+                      )}
+                    </div>
+                    <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-white/15 text-sm transition group-hover:border-white/50 group-hover:bg-white/5 group-hover:translate-x-0.5">
+                      ↗
+                    </span>
+                  </div>
+                );
+
+                return (
+                  <li key={k} className="group">
                     {href ? (
                       <a
                         href={href}
                         target={href.startsWith("http") ? "_blank" : undefined}
                         rel="noreferrer"
-                        className="relative inline-block transition group-hover:text-spectrum"
+                        className="block"
                       >
-                        {v}
+                        {Inner}
                       </a>
                     ) : (
-                      v
+                      Inner
                     )}
-                  </dd>
-                </div>
-              ))}
-            </dl>
+                  </li>
+                );
+              })}
+            </ul>
 
-            <div className="relative mt-12 flex flex-wrap items-center justify-between gap-4">
+            <div className="relative mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-white/8 pt-8">
               <p className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
                 Resposta em até 24h
               </p>
