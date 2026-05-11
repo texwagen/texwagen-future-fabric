@@ -1,9 +1,8 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
-import g1 from "@/assets/gallery-1.jpg";
-import g2 from "@/assets/gallery-2.jpg";
-import g3 from "@/assets/gallery-3.jpg";
-import g4 from "@/assets/gallery-4.jpg";
+import { images } from "@/config/images";
+
+const { gallery1: g1, gallery2: g2, gallery3: g3, gallery4: g4 } = images;
 
 const items = [
   { src: g1, title: "Vestidos Plissados", tag: "Couture", span: "md:col-span-7 md:row-span-2", h: "h-[640px]" },

@@ -1,6 +1,8 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
-import img from "@/assets/immersive.jpg";
+import { images } from "@/config/images";
+
+const img = images.immersive;
 
 export function Immersive() {
   const ref = useRef<HTMLDivElement>(null);

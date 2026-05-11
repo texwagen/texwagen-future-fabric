@@ -1,6 +1,8 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
-import hero from "@/assets/hero-fabric.jpg";
+import { images } from "@/config/images";
+
+const hero = images.hero;
 
 export function Hero() {
   const ref = useRef<HTMLDivElement>(null);
