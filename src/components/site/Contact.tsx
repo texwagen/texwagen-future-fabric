@@ -11,7 +11,7 @@ const items: { k: string; v: string; href?: string; sub?: string }[] = [
   {
     k: "WhatsApp",
     v: "+55 47 99267-0703",
-    sub: "Seg a Sex · 9h às 18h",
+    sub: "Seg a Sex · 8h às 17h",
     href: "https://wa.me/5547992670703",
   },
 ];
@@ -62,11 +62,11 @@ export function Contact() {
                       <div className="text-[10px] uppercase tracking-[0.28em] text-muted-foreground">
                         {k}
                       </div>
-                      <div className="mt-1.5 truncate font-display text-xl tracking-tight text-foreground md:text-2xl">
+                      <div className="mt-2 truncate text-base leading-snug tracking-tight text-foreground md:text-lg">
                         {v}
                       </div>
                       {sub && (
-                        <div className="mt-1 text-[12px] text-muted-foreground">
+                        <div className="mt-1 text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
                           {sub}
                         </div>
                       )}
