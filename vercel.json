@@ -1,1 +1,6 @@
- { "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
+{
+  "buildCommand": "bun run build:vercel",
+  "outputDirectory": "dist/client",
+  "framework": null,
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
