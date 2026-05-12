@@ -8,7 +8,7 @@ const items = [
   { src: g1, title: "Vestidos Plissados", tag: "Couture", span: "md:col-span-7 md:row-span-2", h: "h-[640px]" },
   { src: g2, title: "Dobras Milimétricas", tag: "Macro", span: "md:col-span-5", h: "h-[300px]" },
   { src: g3, title: "Godê em Movimento", tag: "Runway", span: "md:col-span-5", h: "h-[320px]" },
-  { src: g4, title: "Strass · Detalhe Joia", tag: "Aplicação", span: "md:col-span-12", h: "h-[420px]" },
+  { src: g4, title: "Strass · Detalhe Milimétrico", tag: "Aplicação", span: "md:col-span-12", h: "h-[420px]" },
 ];
 
 function Tile({ item, i }: { item: (typeof items)[number]; i: number }) {

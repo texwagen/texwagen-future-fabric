@@ -69,7 +69,7 @@ export function Hero() {
         className="absolute left-6 top-24 z-10 flex items-center gap-3 text-[11px] uppercase tracking-[0.3em] text-muted-foreground md:left-10"
       >
         <span className="h-px w-8 bg-spectrum" />
-        TexWagen · Est. 2008 · Blumenau
+        TexWagen · 2026 · Blumenau
       </motion.div>
 
       {/* Main copy */}

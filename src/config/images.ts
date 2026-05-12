@@ -20,14 +20,14 @@
 import hero from "@/assets/hero-fabric.jpg";
 import immersive from "@/assets/immersive.jpg";
 import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
+import gallery2 from "@/assets/gallery-2.png";
 import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
-import service1 from "@/assets/service-1.jpg";
-import service2 from "@/assets/service-2.jpg";
-import service3 from "@/assets/service-3.jpg";
+import service1 from "@/assets/service-1.png";
+import service2 from "@/assets/service-2.png";
+import service3 from "@/assets/service-3.png";
 import service4 from "@/assets/service-4.png";
-import service5 from "@/assets/service-5.jpg";
+import service5 from "@/assets/service-5.png";
 import service6 from "@/assets/service-6.jpg";
 
 export const images = {

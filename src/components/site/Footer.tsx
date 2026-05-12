@@ -14,13 +14,20 @@ export function Footer() {
         </div>
 
         <div className="font-mono text-[11px] uppercase tracking-[0.25em] text-muted-foreground">
-          © {new Date().getFullYear()} TexWagen Atelier — Todos os direitos reservados.
+          © {new Date().getFullYear()} TexWagen LTDA — Todos os direitos reservados
         </div>
 
         <div className="flex gap-6 text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
-          <a href="#" className="transition hover:text-foreground">Instagram</a>
-          <a href="#" className="transition hover:text-foreground">Behance</a>
-          <a href="#" className="transition hover:text-foreground">LinkedIn</a>
+          <div className="flex gap-6 text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
+            <a
+              href="https://instagram.com/texwagen"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition hover:text-foreground"
+            >
+              Instagram
+            </a>
+          </div>
         </div>
       </div>
     </footer>

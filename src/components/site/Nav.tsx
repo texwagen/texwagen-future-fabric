@@ -1,4 +1,5 @@
 import { motion, useScroll, useTransform } from "motion/react";
+import logo from "../../assets/logo.png";
 
 const links = [
   { label: "TexWagen", href: "#about" },
@@ -23,11 +24,11 @@ export function Nav() {
     >
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 md:px-10">
         <a href="#top" className="group flex items-center gap-2.5">
-          <span className="relative inline-block h-6 w-6 overflow-hidden rounded-sm">
-            <span className="absolute inset-0 bg-spectrum" />
-            <span className="absolute inset-[2px] rounded-[2px] bg-background" />
-            <span className="absolute inset-[6px] bg-spectrum" />
-          </span>
+          <img
+            src={logo}
+            alt="TexWagen Logo"
+            className="h-8 w-8 object-contain"
+          />
           <span className="font-display text-xl tracking-tight">
             Tex<span className="text-spectrum">Wagen</span>
           </span>

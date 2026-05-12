@@ -7,7 +7,7 @@ const services = [
   { n: "02", title: "Plissado Faca · Tam 2", desc: "Equilíbrio entre rigidez escultural e fluidez do caimento.", tag: "Médio porte", img: images.service2 },
   { n: "03", title: "Plissado Faca · Tam 3", desc: "Pregas amplas para statement pieces e moda autoral.", tag: "Editorial", img: images.service3 },
   { n: "04", title: "Plissado Godê", desc: "Pregas radiais que abrem em movimento — assinatura da casa.", tag: "Movimento", img: images.service4 },
-  { n: "05", title: "Aplicação DTF", desc: "Transferência de imagens com fidelidade fotográfica em qualquer base.", tag: "Imagem", img: images.service5 },
+  { n: "05", title: "Aplicação DTF", desc: "Seu DTF aplicado com máxima precisão em qualquer tecido.", tag: "Imagem", img: images.service5 },
   { n: "06", title: "Aplicação de Strass", desc: "Strass aplicado com perfeição milimétrica e acabamento impecável.", tag: "Brilho", img: images.service6 },
 ];
 
