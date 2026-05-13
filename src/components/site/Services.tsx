@@ -3,11 +3,11 @@ import type { MouseEvent } from "react";
 import { images } from "@/config/images";
 
 const services = [
-  { n: "01", title: "Plissado Faca · Tam 1", desc: "Dobras milimétricas para silhuetas estruturadas. Acabamento técnico fino.", tag: "Precisão", img: images.service1 },
-  { n: "02", title: "Plissado Faca · Tam 2", desc: "Equilíbrio entre rigidez escultural e fluidez do caimento.", tag: "Médio porte", img: images.service2 },
-  { n: "03", title: "Plissado Faca · Tam 3", desc: "Pregas amplas para statement pieces e moda autoral.", tag: "Editorial", img: images.service3 },
+  { n: "01", title: "Plissado para Confecções", desc: "Dobras milimétricas para silhuetas estruturadas em escala de produção.", tag: "Precisão", img: images.service1 },
+  { n: "02", title: "Acabamento Têxtil Profissional", desc: "Equilíbrio entre rigidez escultural e fluidez do caimento.", tag: "Médio porte", img: images.service2 },
+  { n: "03", title: "Desenvolvimento de Plissados", desc: "Pregas amplas para statement pieces e moda autoral.", tag: "Editorial", img: images.service3 },
   { n: "04", title: "Plissado Godê", desc: "Pregas radiais que abrem em movimento — assinatura da casa.", tag: "Movimento", img: images.service4 },
-  { n: "05", title: "Aplicação DTF", desc: "Seu DTF aplicado com máxima precisão em qualquer tecido.", tag: "Imagem", img: images.service5 },
+  { n: "05", title: "Aplicação de DTF", desc: "Seu DTF aplicado com máxima precisão em qualquer tecido.", tag: "Imagem", img: images.service5 },
   { n: "06", title: "Aplicação de Strass", desc: "Strass aplicado com perfeição milimétrica e acabamento impecável.", tag: "Brilho", img: images.service6 },
 ];
 
