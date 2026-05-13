@@ -73,16 +73,31 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <main className="relative bg-background text-foreground">
-      <CursorGlow />
-      <Nav />
-      <Hero />
-      <About />
-      <Services />
-      <Gallery />
-      <Immersive />
-      <Contact />
-      <Footer />
-    </main>
+    <>
+      {/* Bloco semântico para SEO — lista de serviços/keywords */}
+      <h2 className="sr-only">
+        Plissado e acabamento têxtil profissional para confecções
+      </h2>
+      <ul className="sr-only">
+        <li>Plissado para Confecções</li>
+        <li>Acabamento Têxtil Profissional</li>
+        <li>Desenvolvimento de Plissados</li>
+        <li>Aplicação de DTF</li>
+        <li>Aplicação de Strass</li>
+        <li>Plissado Godê</li>
+      </ul>
+
+      <main className="relative bg-background text-foreground">
+        <CursorGlow />
+        <Nav />
+        <Hero />
+        <About />
+        <Services />
+        <Gallery />
+        <Immersive />
+        <Contact />
+        <Footer />
+      </main>
+    </>
   );
 }

@@ -17,7 +17,7 @@ export function Immersive() {
       <div className="sticky top-0 flex h-[100svh] items-center overflow-hidden">
         <motion.img
           src={img}
-          alt="Onda de tecido futurista"
+          alt="Detalhe macro de plissado têxtil profissional"
           loading="lazy"
           style={{
             scale,

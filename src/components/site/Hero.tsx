@@ -22,7 +22,7 @@ export function Hero() {
       <motion.div style={{ y, scale }} className="absolute inset-0 -z-20">
         <img
           src={hero}
-          alt="Tecido plissado em luz cinematográfica"
+          alt="Tecido plissado de alta precisão produzido pela TexWagen"
           className="h-full w-full object-cover opacity-80"
           width={1920}
           height={1080}
